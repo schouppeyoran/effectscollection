@@ -1,0 +1,38 @@
+.app__effectsCollection {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app__effectsCollection-container {
+    border: 1px solid var(--color-primary);
+    width: 95%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: hidden;
+    position: relative;
+}
+
+.app__effectsCollection-effect {
+    flex: 1;
+    padding: 1rem;
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    background: #abcdef;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem;
+    transition: all 0.5s ease-in-out;
+    columns: 4 auto;
+    min-height: 25%;
+}
+
+.app__effectsCollection-effect:hover {
+    flex: 10 !important;
+}
