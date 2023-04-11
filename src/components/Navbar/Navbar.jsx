@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './navbar.css';
 import { ImMenu, ImCross, ImHome } from 'react-icons/im';
 import { effects } from '../../constants';
+import { Link } from 'react-router-dom';
+
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -16,7 +18,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className="app__navbar-home">
-          <a href=""><ImHome/></a>
+          <Link to=''><ImHome/></Link>
         </div>
         <div className="app__navbar-menu">
           {toggleMenu ? 
