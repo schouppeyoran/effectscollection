@@ -2,39 +2,39 @@ import images from './images';
 
 export const effects = [
     {
-        label: 'effect 1',
+        label: 'Card Hover Effect (CLICK ME)',
         link: './CardHover'
     },
     {
-        label: 'effect 2',
+        label: 'effect 2 (PLACEHOLDER)',
         link: '#'
     },
     {
-        label: 'effect 3',
+        label: 'effect 3 (PLACEHOLDER)',
         link: '#'
     },
     {
-        label: 'effect 4',
+        label: 'effect 4 (PLACEHOLDER)',
         link: '#'
     },
     {
-        label: 'effect 5',
+        label: 'effect 5 (PLACEHOLDER)',
         link: '#'
     },
     {
-        label: 'effect 6',
+        label: 'effect 6 (PLACEHOLDER)',
         link: '#'
     },
     {
-        label: 'effect 7',
+        label: 'effect 7 (PLACEHOLDER)',
         link: '#'
     },
     {
-        label: 'effect 8',
+        label: 'effect 8 (PLACEHOLDER)',
         link: '#'
     },
     {
-        label: 'effect 9',
+        label: 'effect 9 (PLACEHOLDER)',
         link: '#'
     },
     

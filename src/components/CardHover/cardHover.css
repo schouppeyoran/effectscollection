@@ -1,0 +1,73 @@
+.app__effectsCollection_CardHover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+#CardHover-Cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    width: 95vw;
+    height: 70vh;
+    max-width: 2000px;
+    margin-bottom: 3rem;
+}
+
+#CardHover-Cards:hover > .app__effectsCollection_CardHover-card::after {
+    opacity: 1;
+}
+
+.app__effectsCollection_CardHover-card {
+    background: rgba(255, 255, 255, 0.1);
+    width: calc(33% - 0.3rem);
+    border-radius: 1rem;
+    cursor: pointer;
+    position: relative;
+}
+
+.app__effectsCollection_CardHover-card:hover::before {
+    opacity: 1;
+}
+
+.app__effectsCollection_CardHover-card::before,
+.app__effectsCollection_CardHover-card::after {
+    border-radius: inherit;
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 500ms;
+}
+
+.app__effectsCollection_CardHover-card::before {
+    background: radial-gradient(80vw circle at var(--mouse-x) var(--mouse-y), rgba(255, 255, 255, 0.06), transparent 50%);
+    z-index: 3;
+}
+
+.app__effectsCollection_CardHover-card::after {
+    background: radial-gradient(40vw circle at var(--mouse-x) var(--mouse-y), rgba(255, 255, 255, 0.5), transparent 50%);
+    z-index: 1;
+}
+
+.app__effectsCollection_CardHover-card > .app__effectsCollection_CardHover-card-content {
+    background: rgba(23, 23, 23);
+    border-radius: inherit;
+    height: calc(100% - 2px);
+    width: calc(100% - 2px);
+    inset: 1px;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
