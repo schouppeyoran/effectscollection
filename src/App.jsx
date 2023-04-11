@@ -1,14 +1,17 @@
 import React from 'react';
-
-import {EffectsCollection, Navbar, } from './components';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { EffectsCollection, Navbar, CardHover } from './components';
 
 const App = () => {
     return (
-        <>
-            <Navbar/>
-            <EffectsCollection/>
-        </>
-    )
-}
+        <Router>
+            <Navbar />
+            <Routes>
+                <Route path="/" element={<EffectsCollection />} />
+                <Route path="/cardhover" element={<CardHover />} />
+            </Routes>
+        </Router>
+    );
+};
 
-export default App
+export default App;

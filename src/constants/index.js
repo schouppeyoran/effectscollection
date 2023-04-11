@@ -3,7 +3,7 @@ import images from './images';
 export const effects = [
     {
         label: 'effect 1',
-        link: '/card-hover'
+        link: './CardHover'
     },
     {
         label: 'effect 2',
