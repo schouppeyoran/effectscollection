@@ -1,45 +1,6 @@
 import React from 'react';
 import './effectsCollection.css';
-
-const effects = [
-    {
-        label: 'effect 1',
-        link: '#'
-    },
-    {
-        label: 'effect 2',
-        link: '#'
-    },
-    {
-        label: 'effect 3',
-        link: '#'
-    },
-    {
-        label: 'effect 4',
-        link: '#'
-    },
-    {
-        label: 'effect 5',
-        link: '#'
-    },
-    {
-        label: 'effect 6',
-        link: '#'
-    },
-    {
-        label: 'effect 7',
-        link: '#'
-    },
-    {
-        label: 'effect 8',
-        link: '#'
-    },
-    {
-        label: 'effect 9',
-        link: '#'
-    },
-    
-]
+import { effects } from '../../constants';
 
 const EffectsCollection = () => {
 
@@ -50,24 +11,24 @@ const EffectsCollection = () => {
     
     const getRandomFlexValue = () => {
         // Generate a random number between 0.5 and 3 with one decimal place
-        return (Math.random() * (3 - 0.5) + 0.5).toFixed(1);
+        return (Math.random() * (3 - 0.3) + 0.3).toFixed(1);
     };
 
   return (
     <section id='effectsCollection' className='app__effectsCollection'>
         <div className="app__effectsCollection-container">
             {effects.map((effect, index) => (
-                <div 
+                <a 
                 className="app__effectsCollection-effect"
                 style={{
                     backgroundColor: getRandomColor(),
                     flex: getRandomFlexValue()
                 }}
                 key={index}
+                href={effect.link}
                 >
                     <h1>{effect.label}</h1>
-                    <a href={effect.link}>Go there</a>
-                </div>
+                </a>
             ))}
         </div>
     </section>

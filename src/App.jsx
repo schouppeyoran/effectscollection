@@ -5,7 +5,7 @@ import {EffectsCollection, Navbar, } from './components';
 const App = () => {
     return (
         <>
-            {/* <Navbar/> */}
+            <Navbar/>
             <EffectsCollection/>
         </>
     )

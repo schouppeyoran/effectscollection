@@ -1,12 +1,12 @@
 /* ================ IMPORTING FONTS & OTHER RESOURCES ================ */
-
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 
 
 
 /* ================ VARIABLES ================ */
 :root {
   /* TYPOGRAPHY */
-  --font-main: ;
+  --font-main: 'Space Mono', monospace;
   --font-alt: ;
   
   /* COLOR SCHEME */
