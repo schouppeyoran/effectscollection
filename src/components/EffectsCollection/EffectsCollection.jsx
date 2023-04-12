@@ -32,6 +32,10 @@ const EffectsCollection = () => {
                 </Link>
             ))}
         </div>
+        <div className="app__effectsCollection-signature">
+            <h3>Made by Yoran Schouppe</h3>
+            <a href="https://yoranschouppe.com/">View Portfolio</a>
+        </div>
     </section>
   )
 }
