@@ -2,39 +2,39 @@ import images from './images';
 
 export const effects = [
     {
-        label: 'Card Hover Effect (CLICK ME)',
+        label: 'Card Hover Effect',
         link: './CardHover'
     },
     {
-        label: 'effect 2 (PLACEHOLDER)',
+        label: 'Magic Text Effect',
+        link: './MagicText'
+    },
+    {
+        label: 'PLACEHOLDER',
         link: '#'
     },
     {
-        label: 'effect 3 (PLACEHOLDER)',
+        label: 'PLACEHOLDER',
         link: '#'
     },
     {
-        label: 'effect 4 (PLACEHOLDER)',
+        label: 'PLACEHOLDER',
         link: '#'
     },
     {
-        label: 'effect 5 (PLACEHOLDER)',
+        label: 'PLACEHOLDER',
         link: '#'
     },
     {
-        label: 'effect 6 (PLACEHOLDER)',
+        label: 'PLACEHOLDER',
         link: '#'
     },
     {
-        label: 'effect 7 (PLACEHOLDER)',
+        label: 'PLACEHOLDER',
         link: '#'
     },
     {
-        label: 'effect 8 (PLACEHOLDER)',
-        link: '#'
-    },
-    {
-        label: 'effect 9 (PLACEHOLDER)',
+        label: 'PLACEHOLDER',
         link: '#'
     },
     
@@ -51,6 +51,6 @@ export const socials = [
     }
 ]
 
-export default {
+export {
     images
 };
