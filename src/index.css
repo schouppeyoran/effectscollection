@@ -23,6 +23,12 @@
   --color-purple: rgba(123, 31, 162);
   --color-violet: rgba(103, 58, 183);
   --color-pink: rgba(244, 143, 177);
+  --color-lightYellow: #ffffcc;
+  --color-mediumYellow: #ffff99;
+  --color-darkYellow: #ffcc66;
+  --color-yellowGreen: #9acd32;
+  --color-oliveGreen: #556b2f;
+  --color-jungleRed: #9b1b30;
 
   /* ANIMATION VARIABLES */
   --transition: all 0.4s ease;

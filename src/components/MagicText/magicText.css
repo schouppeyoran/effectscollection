@@ -7,6 +7,7 @@
     height: 100vh;
     padding: 6rem 8rem 0 8rem;
     gap: 2rem;
+    overflow: hidden;
 }
 
 .app__MagicText-heading {
@@ -23,6 +24,10 @@
     animation: point-down 2s infinite ease-in-out;
 }
 
+.fade-scale-in {
+    animation: fade-scale-in 3s;
+}
+
 .app__MagicText h1 {
     animation: background-pan 6s linear infinite;
     font-size: 60px;
@@ -33,6 +38,10 @@
     cursor: pointer;
     position: relative;
     z-index: 5;
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 100%;
 }
 
 .app__MagicText h3 {
@@ -50,14 +59,14 @@
     .app__MagicText h1 {
         animation: background-pan 3s linear infinite;
     }
-
+    
     .app__MagicText-effect-prop1,
     .app__MagicText-effect-prop2,
     .app__MagicText-effect-prop3,
     .app__MagicText-effect-prop4 {
         opacity: 0.6;
     }
-
+    
     .app__MagicText-effect-prop1 {
         animation: propmovement1 3s infinite;
     }
@@ -84,7 +93,7 @@
     position: absolute;
     font-size: 3rem;
     opacity: 0;
-    transition: opacity 0.7s ease-in;
+    transition: all 3s ease-in;
 }
 
 .app__MagicText-effect-prop1 {
@@ -108,6 +117,18 @@
 }
 
 /* ANIMATIONS */
+@keyframes fade-scale-in {
+    0% {
+        opacity: 0;
+        transform: scale(50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(100%);
+    }
+}
+
 @keyframes point-down {
     0% {
         transform: translateY(0%);
@@ -174,7 +195,7 @@
     }
 
     25% {
-        transform: translateX(-150%) translateY(-150%) rotate(-60deg);
+        transform: translateX(-150%) translateY(-100%) rotate(-60deg);
     }
 
     50% {
@@ -182,13 +203,13 @@
     }
 
     75% {
-        transform: translateX(150%) translateY(-150%) rotate(60deg);
+        transform: translateX(150%) translateY(-100%) rotate(60deg);
     }
 }
 
 @keyframes propmovement4 {
     0% {
-        transform: translateY(-100%) translateX(100%);
+        transform: translateY(-70%) translateX(100%);
         opacity: 0;
     }
 
@@ -197,14 +218,13 @@
     }
 
     100% {
-        transform: translateY(200%) translateX(-100%);
+        transform: translateY(140%) translateX(-100%);
         opacity: 0;
     }
 }
 
 /* MAGIC STYLES */
 .magic {
-    
     background: linear-gradient(
         to right,
         var(--color-purple),
@@ -212,7 +232,62 @@
         var(--color-pink),
         var(--color-purple)
     );
-    background-size: 200%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+}
+
+.stars {
+    background: linear-gradient(
+        to right,
+        var(--color-lightYellow),
+        var(--color-mediumYellow),
+        var(--color-darkYellow),
+        var(--color-lightYellow)
+    );
+}
+
+.botanic {
+    background: linear-gradient(
+        to right,
+        var(--color-yellowGreen),
+        var(--color-oliveGreen),
+        var(--color-jungleRed),
+        var(--color-yellowGreen)
+    );
+}
+
+/* SELECTOR STYLING */
+.app__MagicText h3:last-child {
+    color: var(--color-primary);
+}
+
+.app__MagicText-variations {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4rem;
+    text-transform: uppercase;
+}
+
+.app__MagicText-variation {
+    cursor: pointer;
+    position: relative;
+    z-index: 3;
+}
+
+.app__MagicText-variation:hover {
+    .app__MagicText-variation-backdrop {
+        opacity: 0.5;
+    }
+}
+
+.app__MagicText-variation-backdrop {
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    opacity: 0;
+    transform: translateX(-50%) translateY(-50%);
+    filter: blur(1rem);
+    transition: opacity 0.5s ease-in-out;
 }
