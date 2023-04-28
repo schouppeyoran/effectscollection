@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { EffectsCollection, Navbar, CardHover, MagicText } from './components';
+import { EffectsCollection, Navbar, CardHover, MagicText, TaglineCarousel } from './components';
 
 const App = () => {
     return (
@@ -8,8 +8,9 @@ const App = () => {
             <Navbar />
             <Routes>
                 <Route path="/" element={<EffectsCollection />} />
-                <Route path="/cardhover" element={<CardHover />} />
-                <Route path="/magictext" element={<MagicText />} />
+                <Route path="/CardHover" element={<CardHover />} />
+                <Route path="/MagicText" element={<MagicText />} />
+                <Route path="/TaglineCarousel" element={<TaglineCarousel />} />
             </Routes>
         </Router>
     );

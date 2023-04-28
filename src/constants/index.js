@@ -10,8 +10,8 @@ export const effects = [
         link: './MagicText'
     },
     {
-        label: 'PLACEHOLDER',
-        link: '#'
+        label: 'Animated Tagline Carousel',
+        link: './TaglineCarousel'
     },
     {
         label: 'PLACEHOLDER',
