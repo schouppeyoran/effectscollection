@@ -14,8 +14,8 @@ export const effects = [
         link: './TaglineCarousel'
     },
     {
-        label: 'PLACEHOLDER',
-        link: '#'
+        label: 'CTA Buttons',
+        link: './CTAButtons'
     },
     {
         label: 'PLACEHOLDER',

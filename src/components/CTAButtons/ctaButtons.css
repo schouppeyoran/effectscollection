@@ -1,0 +1,99 @@
+.app__ctaButtons {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.app__ctaButtons-container {
+    display: flex;
+    width: 65%;
+    gap: 6rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* CTABUTTON1 RULESET */
+.app__ctaButton1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15vh;
+    transition: all 1s;
+}
+
+.app__ctaButton1-cta {
+    font-family: var(--font-alt);
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 600;
+
+    color: var(--color-text-alt);
+    background: var(--color-primary);
+
+    display: flex;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 1s;
+    box-shadow: 6px 6px 0 var(--color-text-main);
+    transform: skewX(-15deg);
+}
+
+.app__ctaButton1-cta svg {
+    font-size: 40px;
+}
+
+.app__ctaButton1-cta:hover {
+    transition: 0.5s;
+    box-shadow: 10px 10px 0 var(--color-jungleRed);
+
+    .app__ctaButton1-arrow1,
+    .app__ctaButton1-arrow2,
+    .app__ctaButton1-arrow3 {
+        animation: ctaButton1-iconFlash 1.5s infinite;
+    }
+
+    .app__ctaButton1-arrow1 {
+        transform: none;
+        margin-left: 0;
+    }
+
+    .app__ctaButton1-arrow2 {
+        animation-delay: 0.5s;
+    }
+
+    .app__ctaButton1-arrow3 {
+        transform: none;
+        margin-right: 0;
+        animation-delay: 1s;
+    }
+}
+
+.app__ctaButton1-arrow1 {
+    transform: translateX(100%);
+    transition: all 0.5s;
+    margin-left: -40px;
+}
+
+.app__ctaButton1-arrow3 {
+    transform: translateX(-100%);
+    transition: all 0.5s;
+    margin-right: -40px;
+}
+
+@keyframes ctaButton1-iconFlash {
+    0% {
+        color: var(--color-text-alt);
+    }
+
+    50% {
+        color: var(--color-jungleRed);
+    }
+
+    100% {
+        color: var(--color-text-alt);
+    }
+}
