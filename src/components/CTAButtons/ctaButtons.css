@@ -105,3 +105,19 @@
         color: var(--color-text-alt);
     }
 }
+
+@media screen and (max-width: 650px) {
+    .app__ctaButtons-container {
+        width: 90%;
+    }
+
+    .app__ctaButtons a,
+    .app__ctaButtons svg {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .app__ctaButton1-arrow1 {
+        margin-left: -20px;
+    }
+}

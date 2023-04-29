@@ -68,3 +68,15 @@
         min-width: 40%;
     }
 }
+
+@media screen and (max-width: 650px) {
+    .app__effectsCollection-container {
+        flex-direction: column;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+    }
+
+    .app__effectsCollection-effect h1 {
+        font-size: 30px;
+    }
+}

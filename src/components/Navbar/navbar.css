@@ -91,3 +91,16 @@ nav {
         line-height: 20px;
     }
 }
+
+@media screen and (max-width: 650px) {
+    .app__navbar-logo h1 {
+        font-size: 17px;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    .app__navbar-logo h2 {
+        font-size: 12px;
+        line-height: 15px;
+    }
+}

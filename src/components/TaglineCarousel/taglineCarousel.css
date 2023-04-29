@@ -94,3 +94,9 @@
         line-height: 40px;
     }
 }
+
+@media screen and (max-width: 650px) {
+    .app__animatedTaglineCarousel h1 {
+        min-height: 100px;
+    }
+}

@@ -302,3 +302,27 @@
         line-height: 52px;
     }
 }
+
+@media screen and (max-width: 650px) {
+    .app__MagicText {
+        padding: 0 1rem;
+    }
+
+    .app__MagicText-heading {
+        margin-bottom: 0;
+    }
+
+    .app__MagicText-effect {
+        margin-bottom: 1rem;
+    }
+
+    .app__MagicText h3 {
+        width: 100%;
+    }
+
+    .app__MagicText h1 {
+        font-size: 36px;
+        line-height: 40px;
+        text-align: center;
+    }
+}
