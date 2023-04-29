@@ -9,7 +9,7 @@ const CTAButtons = () => {
     <section className='app__ctaButtons'>
         <div className='app__ctaButtons-container'>
             <div className='app__ctaButton1 app__ctaButtons-item'>
-                <a href="" className='app__ctaButton1-cta'>
+                <a className='app__ctaButton1-cta'>
                 {buttonText}
                 <SlArrowRight className='app__ctaButton1-arrow1'/>
                 <SlArrowRight className='app__ctaButton1-arrow2'/>
