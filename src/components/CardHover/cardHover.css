@@ -71,3 +71,14 @@
     justify-content: center;
     text-align: center;
 }
+
+@media screen and (max-width: 1150px) {
+    .app__effectsCollection_CardHover-card {
+        width: calc(50% - 0.3rem);
+    }
+
+    .app__effectsCollection_CardHover h2 {
+        text-align: center;
+        width: 70%;
+    }
+}

@@ -16,6 +16,12 @@
     flex-wrap: wrap;
 }
 
+.app__ctaButtons h3 {
+    color: var(--color-primary);
+    text-align: center;
+    width: 70%;
+}
+
 /* CTABUTTON1 RULESET */
 .app__ctaButton1 {
     display: flex;

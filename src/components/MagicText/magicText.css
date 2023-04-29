@@ -291,3 +291,14 @@
     filter: blur(1rem);
     transition: opacity 0.5s ease-in-out;
 }
+
+@media screen and (max-width: 1150px) {
+    .app__MagicText {
+        padding: 4rem 2rem 0 2rem;
+    }
+
+    .app__MagicText h1 {
+        font-size: 45px;
+        line-height: 52px;
+    }
+}

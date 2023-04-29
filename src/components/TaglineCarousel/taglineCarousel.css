@@ -13,6 +13,7 @@
     height: 100px;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .app__animatedTaglineCarousel h1 {
@@ -84,5 +85,12 @@
     100% {
         transform: translateY(0) rotateX(20deg);
         opacity: 0.3;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .app__animatedTaglineCarousel h1 {
+        font-size: 40px;
+        line-height: 40px;
     }
 }
